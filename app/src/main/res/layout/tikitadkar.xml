@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D3D3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3pt"
+        android:layout_marginTop="5pt"
+        android:layout_marginRight="3pt"
+        android:layout_marginBottom="5pt"
+        android:background="@drawable/backgron"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvnam"
+            android:layout_width="wrap_content"
+            android:layout_height="15pt"
+            android:layout_gravity="clip_horizontal|center"
+            android:layout_weight="0"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="سبحان الله"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20pt"
+            android:layout_marginRight="20pt"
+            android:layout_weight="1"
+            android:background="#000000" />
+
+
+        <TextView
+            android:id="@+id/tvNamber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="1pt"
+            android:layout_marginRight="5pt"
+            android:background="#FFFFFF"
+            android:gravity="right"
+            android:hapticFeedbackEnabled="false"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="25pt" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buDelit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10pt"
+                android:layout_marginTop="5pt"
+                android:layout_weight="0"
+                android:background="@drawable/bubakgrand"
+                android:onClick="bumodifi"
+                android:text="حذف"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvVida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:layout_marginRight="10pt"
+                android:layout_weight="0"
+                android:background="@drawable/bubakgrand"
+                android:onClick="bumodifi"
+                android:text="العد"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
